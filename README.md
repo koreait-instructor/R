@@ -22,8 +22,8 @@
 (day05 줌 녹화본) https://us06web.zoom.us/rec/share/o1sB-Twh1RgMDjed_VWQvTmwh-q5gZx428eU0jy317La1xUWDLWgtNMEw4BgoDtA.Xz5PhLk17RwjNcJb   
 암호: =0SyBMBN  
 
-(day06 줌 녹화본) https://us06web.zoom.us/rec/share/qv7-52KFnaBs_-5MYPM90BMwribK4gb6iIeS-tfqb6tssqACQbVdtGmfHO9f3Df8.cVbVzkCbOFFQwmVZ   
-암호: =@2%7j.f  
+(day06 줌 녹화본) https://us06web.zoom.us/rec/share/Lsj0rpTMLwVq8RrnyG3TA7n2awoGgauEUdjtXxfGC1uF3qKwDML_eW-FYeIpBN5E.C1_EVu2qdv-A_HoJ   
+암호: ^^7C!vr8  
 
 (day07 줌 녹화본) https://us06web.zoom.us/rec/share/lg8SeiJTNQYidGml4OXTW_oEGQR6hMwgGUrFDupBO4FGvS_-dHi7JYsgYLKBAhnK.4lCAJQ3W3AiyuMV-   
 암호: .49uaM4Y  
