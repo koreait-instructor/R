@@ -1,0 +1,85 @@
+# 데이터 분석(파일입출력, 기술통계량분석)
+getwd()
+students <- read.csv("../resource/student_score.csv",
+                     na.strings = "")
+students
+
+#결측값을 0으로 치환
+is.na(students)
+students[is.na(students$math), "math"]<-0
+students
+
+students$math
+
+#평균
+# 0으로 치환하면, 평균값에 영향을 미침
+mean(students$math)
+mean(students$math, na.rm=T)
+# NA값으로 유지하면, NA를 제외하고 계산가능
+mean(students$eng)
+mean(students$eng, na.rm=T)
+
+#합계
+sum(students$eng, na.rm=T)
+
+#최대값
+max(students$eng, na.rm=T)
+
+#최소값
+min(students$eng, na.rm=T)
+
+#중앙값(값을 정렬해서 중간에 위치한 값)
+median(students$eng, na.rm=T)
+
+#분산 (분포와 관련)
+var(students$eng, na.rm=T)
+
+#표준편차
+sd(students$eng, na.rm=T)
+
+#표준오차:표준편차를 표본의 크기의 제곱근으로 나눈값
+length(students$eng)
+sqrt(length(students$eng))
+sd(students$eng, na.rm=T)/sqrt(length(students$eng))
+
+#사분위수: 0/25%/50%/75%/100%구간을 나눔 (1분~3분위수:경계값)
+#1사분위,4사분위 구간에 이상치 데이터 존재할 가능성 높음
+quantile(students$eng, na.rm=T)
+quantile(students$eng, 3/4, na.rm=T)
+
+#공분산: 두개의 변수의 연관성을 계산할때 사용
+#국어점수/영어점수 관계성 계산해보기
+students
+cov(students$eng, students$math, use="complete")
+
+#상관계수
+#공분산은 단위 차이가 발생->표준화한것->상관계수
+#절대값 1에 가까울수록 상관성이 높다(비례관계)라고 표현
+#양수 1에 가까우면 양의 상관관계(a증가 b도 증가)
+#음수 1에 가까우면 음의 상관관계(a증가 b도 감소)
+cor(students$eng, students$math, use="complete")
+
+#범위(min~max)
+range(students$eng, na.rm=T)
+
+#빈도
+table(students$eng)
+#비율
+table(students$eng, useNA="ifany")
+x <- table(students$eng, useNA="ifany")
+y <- prop.table(x)
+y
+
+#첨도: 분포와관련, 얼마나 뾰족한지/꼬리가 두꺼운지
+install.packages("moments") #패키지 설치(1회)
+library(moments) # 패키지를 메모리에 로드
+kurtosis(students$eng, na.rm=T)
+
+#왜도: 데이터분포가 어느쪽으로 치우쳐 있는지
+skewness(students$eng, na.rm=T)
+
+
+# 전체 기술통계량
+install.packages("psych")
+library(psych)
+describe(students) # NA제외하고 계산, *는 문자형

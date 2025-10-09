@@ -1,0 +1,8 @@
+https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html
+(JDK설치) jdk-17.0.12_windows-x64_bin.exe 
+
+탐색기->내컴퓨터->우클릭->속성->고급시스템설정->환경변수
+(시스템변수) path에 아래 URL 등록
+          값: C:\Program Files\Java\jdk-17\bin
+(시스템변수) 새로만들기 -> 변수이름: JAVA_HOME, 
+                      변수값: C:\Program Files\Java\jdk-17

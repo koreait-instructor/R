@@ -1,0 +1,36 @@
+1.rJava 설치 및 로드
+install.packages('rJava')
+library(rJava)
+.jinit()
+
+2.KoNLP 수동설치
+#GitHub에서 최신 버전 설치
+#install.packages('rJava')
+#devtools 접근안되면, rtools45-6608-6492.exe 설치
+devtools::install_github("haven-jeon/KoNLP", 
+                         force = TRUE,
+                         INSTALL_opts = c("--no-multiarch"))
+
+# scala-library 파일이 또 필요하면 아래 실행
+# java_path <- system.file("java", package = "KoNLP")
+# java_path
+# url <- "https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar"
+# dest <- file.path(java_path, "scala-library-2.11.8.jar")
+# download.file(url, dest, mode = "wb")
+
+# 오류발생하면, R스튜디오 재시작하고, 아래부터 실행
+library(KoNLP)
+useNIADic()
+SimplePos09("안녕하세요")
+
+# 아래처럼 결과가 나오면 설치 성공한것임
+# $안녕하세
+# [1] "안녕하세/N"
+# $요
+# [1] "요/M"
+
+
+
+
+
+

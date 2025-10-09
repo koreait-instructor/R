@@ -1,0 +1,19 @@
+-공공 데이터 포털
+  https://www.data.go.kr/
+-캐글(전세계 빅데이터 커뮤니티)
+  https://www.kaggle.com/
+-R 공식 사이트
+  https://www.r-project.org/
+-R 구현코드
+  https://github.com/r-devel/r-svn
+  (R 원시코드 확인, c언어 + R언어)
+- R for Data Scidence 한국어
+  https://bookdown.org/sulgi/r4ds/
+- 데이터분석 전문 가이드(ADSP, ADP)
+  https://product.kyobobook.co.kr/detail/S000001399866
+  자격증 시험준비시 참고
+-그래픽 참고 사이트
+  ggplot2
+  https://ggplot2.tidyverse.org/
+  dplyr
+  https://dplyr.tidyverse.org/
